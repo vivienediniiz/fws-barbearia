@@ -41,12 +41,12 @@ export default function HomePage() {
     {
       title: 'Sua pele merece uma estratégia.',
       subtitle: 'Descubra o protocolo ideal para você',
-      color: 'from-rose-300 to-rose-400',
+      color: 'from-[#E8A8A8] to-[#D98989]',
     },
     {
       title: 'Beleza natural começa aqui.',
       subtitle: 'Agendamentos fáceis e rápidos',
-      color: 'from-gold-400 to-gold-500',
+      color: 'from-[#D4AF37] to-[#C5A059]',
     },
   ];
 
@@ -57,10 +57,10 @@ export default function HomePage() {
       <div className="space-y-6 px-6 py-6">
         {/* Personalized Greeting */}
         <div className="space-y-2">
-          <h1 className="font-serif text-2xl font-bold text-taupe-700">
+          <h1 className="font-serif text-2xl font-bold text-[#3D2C22]">
             Olá, Marcela
           </h1>
-          <p className="text-taupe-600">
+          <p className="text-[#4A3B32]">
             Que Bom Ter Você Aqui. Vamos Cuidar De Você Hoje?
           </p>
         </div>
@@ -85,7 +85,7 @@ export default function HomePage() {
                 className={`h-2 w-2 rounded-full transition-all ${
                   idx === bannerIndex
                     ? 'w-6 bg-gold-400'
-                    : 'bg-cream-200 hover:bg-cream-300'
+                    : 'bg-[#F5F2ED] hover:bg-cream-300'
                 }`}
               />
             ))}
@@ -99,13 +99,13 @@ export default function HomePage() {
 
         {/* Next Appointment Section */}
         <div className="space-y-2">
-          <h3 className="font-serif text-lg font-semibold text-taupe-700">
+          <h3 className="font-serif text-lg font-semibold text-[#3D2C22]">
             Próximo Compromisso
           </h3>
-          <Card className="border border-gold-400 border-opacity-30">
+          <Card className="border border-[#D4AF37] /30">
             <div className="text-center">
-              <p className="text-sm text-taupe-600">Você ainda não tem</p>
-              <p className="mt-2 text-xs text-taupe-500">
+              <p className="text-sm text-[#4A3B32]">Você ainda não tem</p>
+              <p className="mt-2 text-xs text-[#5A4B42]">
                 Agende uma consultoria agora mesmo
               </p>
             </div>
@@ -114,7 +114,7 @@ export default function HomePage() {
 
         {/* Services Section */}
         <div className="space-y-3">
-          <h3 className="font-serif text-lg font-semibold text-taupe-700">
+          <h3 className="font-serif text-lg font-semibold text-[#3D2C22]">
             Nossos Serviços
           </h3>
           <div className="space-y-3">

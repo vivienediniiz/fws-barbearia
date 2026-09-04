@@ -18,7 +18,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ items }) => {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 border-t border-cream-200 bg-white">
+    <nav className="fixed bottom-0 left-0 right-0 border-t border-[#F5F2ED] bg-white">
       <div className="flex justify-around">
         {items.map((item) => {
           const isActive = pathname === item.href;
@@ -31,8 +31,8 @@ export const BottomNav: React.FC<BottomNavProps> = ({ items }) => {
                 transition-colors duration-200
                 ${
                   isActive
-                    ? 'text-gold-400'
-                    : 'text-taupe-600 hover:text-taupe-700'
+                    ? 'text-[#D4AF37]'
+                    : 'text-[#4A3B32] hover:text-[#3D2C22]'
                 }
               `.trim()}
             >

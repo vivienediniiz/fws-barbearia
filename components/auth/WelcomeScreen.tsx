@@ -6,14 +6,14 @@ import { Button } from '@/components/ui/Button';
 
 export const WelcomeScreen: React.FC = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between bg-gradient-to-b from-cream-50 to-cream-100 px-6 pb-12 pt-16">
+    <div className="flex min-h-screen flex-col items-center justify-between bg-gradient-to-b from-[#FDFBF7] to-[#FAF8F5] px-6 pb-12 pt-16">
       <div className="flex-1" />
 
       <div className="flex flex-col items-center gap-6">
         {/* Logo */}
         <div className="flex flex-col items-center gap-2">
           <svg
-            className="h-24 w-24 text-taupe-700"
+            className="h-24 w-24 text-[#3D2C22]"
             fill="none"
             viewBox="0 0 120 120"
             xmlns="http://www.w3.org/2000/svg"
@@ -27,19 +27,19 @@ export const WelcomeScreen: React.FC = () => {
             />
             <circle cx="60" cy="35" r="3" fill="currentColor" />
           </svg>
-          <h2 className="font-serif text-2xl font-bold text-taupe-700">
+          <h2 className="font-serif text-2xl font-bold text-[#3D2C22]">
             Estética
           </h2>
-          <h1 className="font-serif text-3xl font-bold text-taupe-700">
+          <h1 className="font-serif text-3xl font-bold text-[#3D2C22]">
             Flowers
           </h1>
         </div>
 
         <div className="text-center">
-          <h3 className="mb-2 font-serif text-2xl font-bold text-taupe-700">
+          <h3 className="mb-2 font-serif text-2xl font-bold text-[#3D2C22]">
             Bem-vinda à
           </h3>
-          <p className="text-base text-taupe-600">
+          <p className="text-base text-[#4A3B32]">
             Sua jornada para uma beleza natural começa aqui. Acesse sua conta
             para agendar.
           </p>

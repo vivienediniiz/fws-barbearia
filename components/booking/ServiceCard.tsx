@@ -19,12 +19,12 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
   return (
     <Card
       onClick={onClick}
-      className="cursor-pointer border border-gold-400 border-opacity-30"
+      className="cursor-pointer border border-[#D4AF37]/30"
       hover
     >
       <div className="flex items-start gap-4">
         {icon && (
-          <div className="flex-shrink-0 text-gold-400">
+          <div className="flex-shrink-0 text-[#D4AF37]">
             {icon}
           </div>
         )}
@@ -36,10 +36,10 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
           />
         )}
         <div className="flex-1">
-          <h3 className="font-serif text-lg font-semibold text-taupe-700">
+          <h3 className="font-serif text-lg font-semibold text-[#3D2C22]">
             {name}
           </h3>
-          <p className="mt-1 text-sm text-taupe-600">
+          <p className="mt-1 text-sm text-[#4A3B32]">
             {description}
           </p>
         </div>

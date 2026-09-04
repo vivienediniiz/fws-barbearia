@@ -1,65 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 @import 'tailwindcss';
 
-@layer base {
+:root {
+  --primary: 212 175 55;
+  --secondary: 197 160 89;
+  --background: 253 251 247;
+  --text-primary: 61 44 34;
+  --text-secondary: 74 59 50;
+  --accent: 232 168 168;
+  --border: 245 242 237;
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
   :root {
-    --primary: 212 175 55; /* #D4AF37 */
-    --secondary: 197 160 89; /* #C5A059 */
-    --background: 253 251 247; /* #FDFBF7 */
-    --text-primary: 61 44 34; /* #3D2C22 */
-    --text-secondary: 74 59 50; /* #4A3B32 */
-    --accent: 232 168 168; /* #E8A8A8 */
-    --border: 245 242 237; /* #F5F2ED */
-
-    --font-serif: 'Playfair Display', Georgia, serif;
-    --font-sans: 'Inter', sans-serif;
+    --background: 26 20 18;
+    --text-primary: 253 251 247;
+    --text-secondary: 212 207 200;
   }
+}
 
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --background: 26 20 18; /* #1A1412 */
-      --text-primary: 253 251 247; /* #FDFBF7 */
-      --text-secondary: 212 207 200; /* #D4CFC8 */
-    }
-  }
+* {
+  transition-property: color, background-color, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 
-  * {
-    @apply border-opacity-100 transition-colors;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
-  html {
-    @apply scroll-smooth;
-  }
+body {
+  background-color: #fdfbf7;
+  color: #3d2c22;
+  font-family: var(--font-sans);
+}
 
-  body {
-    @apply bg-cream-50 text-taupe-700;
-    font-family: var(--font-sans);
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-serif);
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
 }
 
 @layer components {
   .btn-primary {
-    @apply rounded-pill bg-gradient-to-r from-gold-400 to-gold-500 px-8 py-3 font-sans font-semibold text-white transition-transform hover:scale-105 active:scale-95;
+    @apply rounded-full bg-gradient-to-r from-[#D4AF37] to-[#C5A059] px-8 py-3 font-sans font-semibold text-white transition-transform hover:scale-105 active:scale-95;
   }
 
   .btn-secondary {
-    @apply rounded-pill border-2 border-gold-400 px-8 py-3 font-sans font-semibold text-gold-400 transition-colors hover:bg-gold-50 active:bg-gold-100;
+    @apply rounded-full border-2 border-[#D4AF37] px-8 py-3 font-sans font-semibold text-[#D4AF37] transition-colors hover:bg-orange-50 active:bg-orange-100;
   }
 
   .card {
-    @apply rounded-2xl bg-white p-6 shadow-card;
+    @apply rounded-2xl bg-white p-6 shadow-md;
   }
 
   .input-field {
-    @apply w-full rounded-xl border border-cream-200 bg-cream-50 px-4 py-3 font-sans text-taupe-700 placeholder-taupe-600 outline-none transition-all focus:border-gold-400 focus:ring-2 focus:ring-gold-400 focus:ring-opacity-20;
+    @apply w-full rounded-xl border border-[#F5F2ED] bg-[#FAF8F5] px-4 py-3 font-sans text-[#3D2C22] placeholder-[#4A3B32] outline-none transition-all focus:border-[#D4AF37] focus:ring-2 focus:ring-[#D4AF37];
   }
 
   .badge {
-    @apply inline-flex items-center rounded-full bg-gold-400 bg-opacity-10 px-3 py-1 text-xs font-semibold text-gold-500;
+    @apply inline-flex items-center rounded-full bg-[#D4AF37]/10 px-3 py-1 text-xs font-semibold text-[#C5A059];
   }
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');

@@ -22,10 +22,10 @@ export const Header: React.FC<HeaderProps> = ({
           {showBack && (
             <button
               onClick={onBack}
-              className="flex h-10 w-10 items-center justify-center rounded-full hover:bg-cream-100"
+              className="flex h-10 w-10 items-center justify-center rounded-full hover:bg-[#FAF8F5]"
             >
               <svg
-                className="h-6 w-6 text-taupe-700"
+                className="h-6 w-6 text-[#3D2C22]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -40,7 +40,7 @@ export const Header: React.FC<HeaderProps> = ({
             </button>
           )}
           {title && (
-            <h1 className="font-serif text-xl font-semibold text-taupe-700">
+            <h1 className="font-serif text-xl font-semibold text-[#3D2C22]">
               {title}
             </h1>
           )}
@@ -48,7 +48,7 @@ export const Header: React.FC<HeaderProps> = ({
         {rightIcon && (
           <button
             onClick={onRightClick}
-            className="flex h-10 w-10 items-center justify-center rounded-full hover:bg-cream-100"
+            className="flex h-10 w-10 items-center justify-center rounded-full hover:bg-[#FAF8F5]"
           >
             {rightIcon}
           </button>

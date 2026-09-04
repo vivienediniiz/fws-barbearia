@@ -43,15 +43,15 @@ export default function BookingPage() {
           <Card
             key={idx}
             hover
-            className="border border-gold-400 border-opacity-30 cursor-pointer"
+            className="border border-[#D4AF37]/30 cursor-pointer"
           >
             <div className="flex items-start gap-4">
               <span className="text-3xl">{category.icon}</span>
               <div className="flex-1">
-                <h3 className="font-serif text-lg font-semibold text-taupe-700">
+                <h3 className="font-serif text-lg font-semibold text-[#3D2C22]">
                   {category.name}
                 </h3>
-                <p className="mt-1 text-sm text-taupe-600">
+                <p className="mt-1 text-sm text-[#4A3B32]">
                   {category.description}
                 </p>
               </div>

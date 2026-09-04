@@ -22,9 +22,9 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const baseStyles = 'font-semibold transition-all duration-200 rounded-pill';
 
     const variants = {
-      primary: 'bg-gradient-to-r from-gold-400 to-gold-500 text-white hover:shadow-lg active:scale-95',
-      secondary: 'border-2 border-gold-400 text-gold-400 hover:bg-gold-50 active:bg-gold-100',
-      tertiary: 'text-taupe-700 hover:bg-cream-100 active:bg-cream-200',
+      primary: 'bg-gradient-to-r from-[#D4AF37] to-[#C5A059] text-white hover:shadow-lg active:scale-95',
+      secondary: 'border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#FAF8F5] active:bg-[#F5F2ED]',
+      tertiary: 'text-[#3D2C22] hover:bg-[#F5F2ED] active:bg-[#E8A8A8]/20',
     };
 
     const sizes = {

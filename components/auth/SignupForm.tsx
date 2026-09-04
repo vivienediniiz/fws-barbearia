@@ -30,15 +30,15 @@ export const SignupForm: React.FC = () => {
   };
 
   return (
-    <div className="flex min-h-screen flex-col bg-cream-50">
+    <div className="flex min-h-screen flex-col bg-[#FDFBF7]">
       <Header title="Cadastro" showBack />
 
       <div className="flex-1 overflow-y-auto px-6 py-8">
         <div className="mb-8">
-          <h2 className="font-serif text-2xl font-bold text-taupe-700">
+          <h2 className="font-serif text-2xl font-bold text-[#3D2C22]">
             Crie sua Conta
           </h2>
-          <p className="mt-1 text-taupe-600">
+          <p className="mt-1 text-[#4A3B32]">
             Preencha seus dados para começar sua jornada.
           </p>
         </div>
@@ -104,13 +104,13 @@ export const SignupForm: React.FC = () => {
 
           <div className="my-6 flex items-start gap-3">
             <input type="checkbox" id="terms" className="mt-1" required />
-            <label htmlFor="terms" className="text-sm text-taupe-600">
+            <label htmlFor="terms" className="text-sm text-[#4A3B32]">
               Concordo com os{' '}
-              <Link href="#" className="text-gold-500 hover:text-gold-600">
+              <Link href="#" className="text-[#C5A059] hover:text-[#B8860B]">
                 Termos de Serviço
               </Link>{' '}
               e a{' '}
-              <Link href="#" className="text-gold-500 hover:text-gold-600">
+              <Link href="#" className="text-[#C5A059] hover:text-[#B8860B]">
                 Política de Privacidade
               </Link>
             </label>
@@ -128,9 +128,9 @@ export const SignupForm: React.FC = () => {
           </Button>
         </form>
 
-        <p className="mt-6 text-center text-sm text-taupe-600">
+        <p className="mt-6 text-center text-sm text-[#4A3B32]">
           Já tem uma conta?{' '}
-          <Link href="/auth/login" className="font-semibold text-gold-500 hover:text-gold-600">
+          <Link href="/auth/login" className="font-semibold text-[#C5A059] hover:text-[#B8860B]">
             Entre aqui!
           </Link>
         </p>

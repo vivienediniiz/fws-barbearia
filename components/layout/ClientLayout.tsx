@@ -52,7 +52,7 @@ export const ClientLayout: React.FC<ClientLayoutProps> = ({
   showBottomNav = true,
 }) => {
   return (
-    <div className="flex flex-col min-h-screen bg-cream-50">
+    <div className="flex flex-col min-h-screen bg-[#FDFBF7]">
       <main className="flex-1 overflow-y-auto pb-24">
         {children}
       </main>
